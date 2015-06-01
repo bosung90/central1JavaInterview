@@ -1,0 +1,39 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+			version="3.0">
+
+	<display-name>Central 1 Interview Assignment</display-name>
+
+	<servlet>
+		<servlet-name>postServlet</servlet-name>
+		<servlet-class>com.central1.interview.PostServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>signUpServlet</servlet-name>
+		<servlet-class>com.central1.interview.SignUpServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>getPostServlet</servlet-name>
+		<servlet-class>com.central1.interview.GetPostServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>postServlet</servlet-name>
+		<url-pattern>/action/post</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>signUpServlet</servlet-name>
+		<url-pattern>/action/sign-up</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>getPostServlet</servlet-name>
+		<url-pattern>/getPost</url-pattern>
+	</servlet-mapping>
+
+</web-app>
